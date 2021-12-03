@@ -1,0 +1,101 @@
+body {
+    background-color: black;
+}
+
+.space {
+    background-image: url('resources/space.png');
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.planet-area {
+    position: absolute;
+    height: 500px;
+    width: 800px;
+    left: 0;
+    bottom: 0;
+}
+
+.rocket {
+    position: absolute;
+    transform: rotate(25deg);
+    height: 60%;
+    left: 150px;
+    bottom: 200px;
+}
+
+.planet {
+    position: absolute;
+    width: 50%;
+    height: 70%;
+    bottom: -30px;
+    left: 0;
+}
+
+.control-panel {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(45deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    background-color: rgb(7, 15, 118);
+    width: 30%;
+    height: 40%;
+    position: absolute;
+    bottom: 100px;
+    left: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.control-panel__inner {
+    background-color: rgb(175, 176, 196, 0.5);
+    border-radius: 10px;
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px 20px 10px 20px;
+}
+
+.acceptPasswordButton, .launch {
+    align-self: center;
+    background-color: #5cc9d7;
+    border-color: royalblue;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.password {
+    border-radius: 5px;
+    width: 160px;
+    display: flex;
+    align-self: center;
+    background-color: lightblue;
+    border-color: royalblue;
+    text-align: center;
+}
+
+input[class=acceptPasswordButton], [class=password] {
+    color: blue;
+}
+
+
+input[type=range][orient=vertical] {
+    writing-mode: bt-lr; /* IE */
+    -webkit-appearance: slider-vertical; /* WebKit */
+    width: 8px;
+}
+
+.check-buttons, .levers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.levers {
+    padding: 0 3px 0 3px;
+    height: 50%;
+}
